@@ -51,3 +51,8 @@ const swiper = new Swiper('.swiper', {
   });
   
   
+$(function(){
+
+  $('#gnb > ul > li').hover  
+  
+})

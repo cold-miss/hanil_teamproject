@@ -12,53 +12,82 @@ body {
 
 .main-header {
     width: 100vw;
-    height: 65px;
+    height: 68px;
     position: relative;
-    /* min-width: 1440px; */
-    /* overflow: hidden; */
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 12px 20px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
-
 
 .main-header .logo img{
-    width: 122px;
+    width: 132px;
+    padding: 5px;
 }
 
-
-.main-header #gnb {
-    position: relative;
-    width: 80vw;
-    text-align: right;
-    z-index: 1000;
+.main-header #gnb > ul {
+    margin-right: 3vw;
+    display: flex;
+    justify-content: flex-end;
+    width: 60vw;
 }
-
-.main-header #gnb  ul > li {
-    display: inline-block;
-    padding-left: 70px; 
-}
-
 
 .main-header #gnb > ul > li {
-    font-size: 18px;
+    float: right;
+    width: 20%;
 }
 
-.main-header #gnb > ul > li:last-child {
-    padding-right: 20px;
+.main-header #gnb {
+    width: 70vw;
+    padding-right: 30px;
+    position: absolute;
+    margin-left: 20vw;
+    float: right;
+    padding-left: 8vw;
+    z-index: 10;
 }
+
+.main-header #gnb > ul > li > a {
+    display: block;
+    font-size: 18px;
+    width: 120px;
+    padding: 15px;
+    text-align: center;
+}
+
+.main-header #gnb .sub-menu {
+    padding-top: 10px;
+    padding-left: 25px;
+    background: #fff;
+    height: 200px;
+    display: none;
+}
+
+.main-header #gnb > ul > li:hover> .sub-menu {
+    display: block;
+} 
+
+.main-header #gnb .sub-menu li {
+    padding-bottom: 8px;
+}
+
+.main-header #gnb .sub-menu li a{
+    text-align: left;
+    
+}
+
+/* right-menu */
 
 .main-header .right-menu {
     display: flex;
-    width: 10vw;
+    justify-content: center;
+    align-items: center;
+    width: 9vw;
     margin-left: 70px;
 }
 
 .main-header .right-menu-container {
     display: flex;
-    padding: 20px;
-    justify-content: flex-end;
     width: 100vw;
 }
 
@@ -72,6 +101,8 @@ body {
     font-size: 18px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0.2em;
+    cursor: pointer;
 }
 
 .right-menu .glob > img {
@@ -81,7 +112,8 @@ body {
 
 .right-menu #sitemap-toggle-btn {
     margin-left: 20px;
-    margin-top: 5px;
+    margin-bottom: 0.3em;
+    cursor: pointer;
 }
 
 .right-menu-container .glob .v-slash {
@@ -89,15 +121,28 @@ body {
     margin-bottom: 5px;
 }
 
-/* nav */
-
-.main-header #gnb .sub-menu {
+.main-header .nav_bg {
     display: none;
+    position: absolute;
+    width: 100vw;
+    height: 200px;
+    background: #fff;
+    z-index: 10;
+    top: 68px;
+
 }
+
+.main-header .right-menu-container #sitemap-toggle-btn{
+    background-color: transparent;
+    border: none;
+    margin-top: 0.2em;
+}    
 
 
 
 /* 메인비쥬얼 슬라이드*/
+
+
 #main-visual {
     position: relative;
     width: 100vw;
@@ -151,7 +196,7 @@ body {
 /* search-box  */
 
 .search-box {
-    z-index: 999;
+    z-index: 8;
     width: 450px;
     height: 250px;
     background: #000089;
@@ -270,7 +315,7 @@ main {
 #content2-full {
     min-width: 1440px;
     position: relative;
-    margin-top: 200px;
+    margin-top: px;
     margin-bottom: 60px;
 }
 
@@ -572,6 +617,7 @@ main {
     width: 100vw;
     height: 400px;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -586,8 +632,8 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 420px;
-    height: 300px;
+    width: 65vh;
+    height: 50vh;
     background: rgba(51, 51, 51, 0.75);
     display: flex;
     flex-direction: column;
@@ -835,6 +881,11 @@ main .talent-title-text h2{
 
 .talent-conti-container .talent-conti-group li .talent-conti-img{
     object-fit: cover;
+    width: 100vw;
+}    
+
+.talent-conti-container .talent-conti-group li .talent-conti-img > img{
+    width: 30%;
 }    
 
 .talent-conti-container .talent-conti-group .talent-conti-text{
