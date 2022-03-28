@@ -973,14 +973,14 @@ main .talent-title-text h2{
 .recruit-title-text {
     position: relative;
     /* outline: 2px solid red; */
-    margin-top: 50vh;
+    margin-top: 60vh;
 }
 
 .recruit-title-text .text-border-line .under-line {
     width: 100px;
     height: 10px;
     background-color: #0D0F87;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 100px;
 }
 
